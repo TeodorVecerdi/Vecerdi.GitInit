@@ -10,6 +10,15 @@ A .NET tool to initialize a git repository
 dotnet tool install -g Vecerdi.GitInit
 ```
 
+### Building and installing from source
+
+```bash
+git clone https://github.com/TeodorVecerdi/Vecerdi.GitInit
+cd Vecerdi.GitInit
+dotnet pack -c Release
+dotnet tool install -g --add-source ./nupkg Vecerdi.GitInit
+```
+
 ## Usage
 
 ```bash
