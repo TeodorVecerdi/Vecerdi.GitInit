@@ -38,7 +38,6 @@ Options:
   -L, --no-license                       Do not create a LICENSE file
   -m, --commit-message <commit-message>  Commit message
   -M, --no-commit                        Do not commit the initial commit
-  -R, --no-readme                        Do not create a README.md file
   -A, --dont-add-all                     Do not add all files to the initial commit
   -d, --dry-run                          Do not actually run any commands
   --version                              Show version information
