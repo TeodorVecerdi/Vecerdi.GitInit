@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <LangVersion>preview</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PackAsTool>true</PackAsTool>
+        <ToolCommandName>gitinit</ToolCommandName>
+        <PackageOutputPath>./nupkg</PackageOutputPath>
+
+        <PackageVersion>1.0.0</PackageVersion>
+        <PackageReleaseNotes>
+            Initial release.
+        </PackageReleaseNotes>
+
+        <Title>Vecerdi.GitInit</Title>
+        <PackageId>Vecerdi.GitInit</PackageId>
+        <Authors>Teodor Vecerdi</Authors>
+        <Description>Initializes a git repository in the current directory.</Description>
+
+        <Author>$(Authors)</Author>
+        <Version>$(PackageVersion)</Version>
+
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/TeodorVecerdi/Vecerdi.GitInit</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/TeodorVecerdi/Vecerdi.GitInit</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>dotnet;cli;tool;dotnet-tool;git-init;git</PackageTags>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="System.CommandLine" Version="2.0.0-beta4.22272.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="\" />
+        <None Include="LICENSE" Pack="true" PackagePath="\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="nupkg" />
+    </ItemGroup>
+
+</Project>
