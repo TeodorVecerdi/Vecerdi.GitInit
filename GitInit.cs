@@ -8,13 +8,13 @@ internal static class GitInit {
         CommandHelper.Run("git", "init", dry: dryRun);
 
         if (!noIgnores) {
-            if ((ignores ??= acceptDefaults ? "rider,unity" : PromptHelper.GetInput(".gitignore templates", "rider,unity", "no .gitignore")) is not "-") {
+            if ((ignores ??= acceptDefaults ? "rider,unity,dotnet" : PromptHelper.GetInput(".gitignore templates", "rider,unity,dotnet", "no .gitignore")) is not "-") {
                 CommandHelper.Run("ignore", $"{ignores} --silent", dry: dryRun);
             }
         }
 
         if (!noLicense) {
-            if ((licenseType ??= acceptDefaults ? "MIT" : PromptHelper.GetInput("license type", "MIT", "no license")) is not "-") {
+            if ((licenseType ??= acceptDefaults ? "NON-AI-MIT" : PromptHelper.GetInput("license type", "NON-AI-MIT", "no license")) is not "-") {
                 CommandHelper.Run("license", $"--silent --accept-placeholders --license=\"{licenseType}\"", dry: dryRun);
             }
         }
