@@ -9,7 +9,7 @@
         <ToolCommandName>gitinit</ToolCommandName>
         <PackageOutputPath>./nupkg</PackageOutputPath>
 
-        <PackageVersion>1.1.0</PackageVersion>
+        <PackageVersion>1.1.1</PackageVersion>
         <PackageReleaseNotes>
             Initial release.
         </PackageReleaseNotes>
@@ -22,7 +22,7 @@
         <Author>$(Authors)</Author>
         <Version>$(PackageVersion)</Version>
 
-        <PackageLicenseExpression>NON-AI-MIT</PackageLicenseExpression>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageProjectUrl>https://github.com/TeodorVecerdi/Vecerdi.GitInit</PackageProjectUrl>
         <RepositoryUrl>https://github.com/TeodorVecerdi/Vecerdi.GitInit</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
