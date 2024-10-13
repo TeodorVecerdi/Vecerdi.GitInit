@@ -21,6 +21,11 @@ dotnet tool install -g --add-source ./nupkg Vecerdi.GitInit
 
 ## Usage
 
+Requires the following tools to also be installed:
+
+- [Vecerdi.License](https://github.com/TeodorVecerdi/Vecerdi.License)
+- [Vecerdi.Ignore](https://github.com/TeodorVecerdi/Vecerdi.Ignore)
+
 ```bash
 $ gitinit --help
 
